@@ -1,10 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace TestAPI
 {
-    class ComicProcessor
+    public class ComicProcessor
     {
+        public async Task LoadComic(int comicNumber = 0)
+        {
+            string url = "";
+
+            if(comicNumber > 0)
+            {
+                url = $"http://xkcd.com/{ comicNumber }/info.0.json";
+            }
+            else
+            {
+                url = "http://xkcd.com/info.0.json";
+            }
+        } 
     }
 }
