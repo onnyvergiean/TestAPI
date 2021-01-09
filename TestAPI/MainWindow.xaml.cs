@@ -23,6 +23,7 @@ namespace TestAPI
         public MainWindow()
         {
             InitializeComponent();
+            ApiHelper.InitializeClient();
         }
     }
 }
