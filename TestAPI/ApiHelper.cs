@@ -6,7 +6,7 @@ using System.Text;
 
 namespace TestAPI
 {
-    public class ApiHelper
+    public static class ApiHelper
     {
         public static HttpClient ApiClient { get; set; }
 
