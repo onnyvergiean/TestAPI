@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="Suninfo" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <Button x:Name="btnLoadSunInfo" Content="Load Sun Info"  Margin="20" Height="68" Width="240"/>
+            <TextBlock x:Name="txtBlockSunriseTxt" Margin="20"/>
+            <TextBlock x:Name="txtBlockSunsetTxt" Margin="20"/>
+
+
+        </StackPanel>
     </Grid>
 </Window>
