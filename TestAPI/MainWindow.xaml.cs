@@ -27,6 +27,7 @@ namespace TestAPI
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
+            btnNextImage.IsEnabled = false;
         }
 
         private async Task LoadImage(int imageNumber =0)
@@ -49,14 +50,34 @@ namespace TestAPI
             await LoadImage();
         }
 
-        private void btnPreviousImageClicked(object sender, RoutedEventArgs e)
+        private async void btnPreviousImageClicked(object sender, RoutedEventArgs e)
         {
+            if(currentNumber > 1)
+            {
+                currentNumber -= 1;
+                btnNextImage.IsEnabled = true;
+                await LoadImage(currentNumber);
 
+                if(currentNumber == 1)
+                {
+                    btnPreviousImage.IsEnabled = false;
+                }
+            }
         }
 
-        private void btnNextImageClicked(object sender, RoutedEventArgs e)
+        private async void btnNextImageClicked(object sender, RoutedEventArgs e)
         {
+            if(currentNumber < maxNumber)
+            {
+                currentNumber += 1;
+                btnPreviousImage.IsEnabled = true;
+                await LoadImage(currentNumber);
 
+                if(currentNumber == maxNumber)
+                {
+                    btnNextImage.IsEnabled = false;
+                }
+            }
         }
 
         private void btnSunInformationClicked(object sender, RoutedEventArgs e)
