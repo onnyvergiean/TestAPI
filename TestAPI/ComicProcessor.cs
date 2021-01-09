@@ -9,7 +9,7 @@ namespace TestAPI
 {
     public class ComicProcessor
     {
-        public async Task LoadComic(int comicNumber = 0)
+        public async Task<ComicModel> LoadComic(int comicNumber = 0)
         {
             string url = "";
 
@@ -26,7 +26,13 @@ namespace TestAPI
             {
                 if (response.IsSuccessStatusCode)
                 {
+                    ComicModel comic = await response.Content.ReadAsAsync<ComicModel>();
 
+                    return comic;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
                 }
             }
         } 
