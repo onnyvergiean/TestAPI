@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace TestAPI
 {
     /// <summary>
-    /// Interaction logic for Suninfo.xaml
+    /// Interaction logic for SunInfo.xaml
     /// </summary>
-    public partial class Suninfo : Window
+    public partial class SunInfo : Window
     {
-        public Suninfo()
+        public SunInfo()
         {
             InitializeComponent();
         }
