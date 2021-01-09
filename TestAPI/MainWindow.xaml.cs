@@ -44,9 +44,9 @@ namespace TestAPI
             imgComicImage.Source = new BitmapImage(uriSource);
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            await LoadImage();
         }
     }
 }
