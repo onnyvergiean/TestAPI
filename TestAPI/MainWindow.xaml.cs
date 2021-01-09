@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,10 +21,24 @@ namespace TestAPI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int maxNumber = 0;
+        private int currentNumber = 0;
         public MainWindow()
         {
             InitializeComponent();
             ApiHelper.InitializeClient();
+        }
+
+        private async Task LoadImage(int imageNumber =0)
+        {
+            var comic = await ComicProcessor.LoadComic(imageNumber);
+
+            if(imageNumber == 0)
+            {
+                maxNumber = comic.Num;
+            }
+
+            currentNumber = comic.Num;
         }
     }
 }
