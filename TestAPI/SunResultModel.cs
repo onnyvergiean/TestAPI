@@ -6,6 +6,6 @@ namespace TestAPI
 {
     public class SunResultModel
     {
-        public SunModel Result { get; set; }
+        public SunModel Results { get; set; }
     }
 }
