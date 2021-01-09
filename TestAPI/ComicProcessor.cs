@@ -29,6 +29,11 @@ namespace TestAPI
                 {
                     ComicModel comic = await response.Content.ReadAsAsync<ComicModel>();
 
+                    if(comicNumber == 0)
+                    {
+                        MaxComicNumber = comic.Num;
+                    }
+
                     return comic;
                 }
                 else
