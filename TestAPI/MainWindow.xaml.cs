@@ -39,6 +39,9 @@ namespace TestAPI
             }
 
             currentNumber = comic.Num;
+
+            var uriSource = new Uri(comic.Img, UriKind.Absolute);
+            imgComicImage.Source = new BitmapImage(uriSource);
         }
     }
 }
