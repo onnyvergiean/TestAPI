@@ -4,7 +4,8 @@ using System.Text;
 
 namespace TestAPI
 {
-    class SunResultModel
+    public class SunResultModel
     {
+        public SunModel Result { get; set; }
     }
 }
