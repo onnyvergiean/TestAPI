@@ -10,7 +10,7 @@ namespace TestAPI
     {
         public static async Task<SunModel> LoadSunInformation()
         {
-            string url = "";
+            string url = "https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today";
 
       
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))

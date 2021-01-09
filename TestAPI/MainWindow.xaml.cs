@@ -82,7 +82,8 @@ namespace TestAPI
 
         private void btnSunInformationClicked(object sender, RoutedEventArgs e)
         {
-
+            SunInfo sunInfo = new SunInfo();
+            sunInfo.Show();
         }
     }
 }
