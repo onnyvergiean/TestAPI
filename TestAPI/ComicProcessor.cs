@@ -10,7 +10,7 @@ namespace TestAPI
     public class ComicProcessor
     {
         public int MaxComicNumber { get; set; }
-        public async Task<ComicModel> LoadComic(int comicNumber = 0)
+        public static async Task<ComicModel> LoadComic(int comicNumber = 0)
         {
             string url = "";
 
