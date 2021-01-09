@@ -21,5 +21,10 @@ namespace TestAPI
         {
             InitializeComponent();
         }
+
+        private void btnLoadSunInfoClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
