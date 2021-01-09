@@ -43,5 +43,10 @@ namespace TestAPI
             var uriSource = new Uri(comic.Img, UriKind.Absolute);
             imgComicImage.Source = new BitmapImage(uriSource);
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
