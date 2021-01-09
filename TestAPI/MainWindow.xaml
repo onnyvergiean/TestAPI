@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestAPI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
-    <Grid>
+        Title="MainWindow" Height="576" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Height="590" VerticalAlignment="Top">
         <Button x:Name="btnPreviousImage" Content="Previous" HorizontalAlignment="Left" Margin="116,31,0,0" VerticalAlignment="Top" Height="57" Width="156" Click="btnPreviousImageClicked"/>
         <Button x:Name="btnSunInformation" Content="Sun Information" HorizontalAlignment="Left" Margin="338,31,0,0" VerticalAlignment="Top" Height="57" Width="156" Click="btnSunInformationClicked"/>
         <Button x:Name="btnNextImage" Content="Next" HorizontalAlignment="Left" Margin="550,31,0,0" VerticalAlignment="Top" Height="57" Width="156" Click="btnNextImageClicked"/>
-        <Image x:Name="imgComicImage" Margin="0,104,0,0"/>
+        <Image x:Name="imgComicImage" Margin="0,104,0,30"/>
 
     </Grid>
 </Window>
