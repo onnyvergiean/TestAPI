@@ -48,5 +48,20 @@ namespace TestAPI
         {
             await LoadImage();
         }
+
+        private void btnPreviousImageClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnNextImageClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSunInformationClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

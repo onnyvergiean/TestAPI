@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="btnPreviousImage" Content="Previous" HorizontalAlignment="Left" Margin="116,31,0,0" VerticalAlignment="Top" Height="57" Width="156"/>
-        <Button x:Name="btnSunInformation" Content="Sun Information" HorizontalAlignment="Left" Margin="338,31,0,0" VerticalAlignment="Top" Height="57" Width="156"/>
-        <Button x:Name="btnNextImage" Content="Next" HorizontalAlignment="Left" Margin="550,31,0,0" VerticalAlignment="Top" Height="57" Width="156"/>
-        <Image x:Name="imgComicImage" HorizontalAlignment="Left" Height="320" Margin="0,106,0,0" VerticalAlignment="Top" Width="795"/>
+        <Button x:Name="btnPreviousImage" Content="Previous" HorizontalAlignment="Left" Margin="116,31,0,0" VerticalAlignment="Top" Height="57" Width="156" Click="btnPreviousImageClicked"/>
+        <Button x:Name="btnSunInformation" Content="Sun Information" HorizontalAlignment="Left" Margin="338,31,0,0" VerticalAlignment="Top" Height="57" Width="156" Click="btnSunInformationClicked"/>
+        <Button x:Name="btnNextImage" Content="Next" HorizontalAlignment="Left" Margin="550,31,0,0" VerticalAlignment="Top" Height="57" Width="156" Click="btnNextImageClicked"/>
+        <Image x:Name="imgComicImage" Margin="0,104,0,0"/>
 
     </Grid>
 </Window>
